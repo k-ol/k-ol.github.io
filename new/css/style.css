@@ -24,10 +24,12 @@
 .nav_top {
   font-size: 1.5rem;
   display: flex;
-  height: 50px;
+  margin-bottom: 1.5rem;
 }
 .nav_top li {
   list-style: none;
+  white-space: nowrap;
+  height: 50px;
 }
 .nav_top a {
   padding: 10px;
@@ -41,6 +43,31 @@
   background: #a7f5c2;
   padding: 10px 25px;
   margin: 10px 5px;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+  margin: -50px auto 0;
+  height: 50px;
+  background: #BFF08E;
+  position: relative;
+}
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+  width: 500px;
+  background: #B5E3FF;
+  height: inherit;
+}
+.content {
+  text-align: justify;
+  text-indent: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding-bottom: 55px;
+  background: #ebeef0;
+  padding: 15px;
+  margin-bottom: 50px;
 }
 html {
   height: 100%;
@@ -67,48 +94,21 @@ body {
   max-width: 100%;
   min-height: 100%;
   height: auto !important;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0eff20;
 }
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
-  max-width: 1400px;
-  padding: 0 0 50px;
-  margin: 0 auto;
-  position: relative;
-}
-.middle:after {
-  display: table;
-  clear: both;
-  content: '';
+  display: flex;
+  align-content: flex-end;
+  flex: auto;
 }
 .container {
-  width: 100%;
-  float: left;
-  overflow: hidden;
-}
-.content {
-  padding: 0 0 0 270px;
-  text-align: justify;
-  text-indent: 2rem;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-}
-/* Left Sidebar
------------------------------------------------------------------------------*/
-.left-sidebar {
-  float: left;
-  width: 250px;
-  margin-left: -100%;
-  position: relative;
-  background: #B5E3FF;
-  height: 100%;
-}
-/* Footer
------------------------------------------------------------------------------*/
-.footer {
-  margin: -50px auto 0;
-  height: 50px;
-  background: #BFF08E;
-  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fff60e;
+  flex: auto;
+  display: flex;
 }
