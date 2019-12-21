@@ -4,5 +4,35 @@
 .left-sidebar {
 	width: 500px;
 	background: #B5E3FF;
-    height: inherit;
+
 }
+.nav_left {
+    flex-direction:column;
+    font-size: 1.5rem;
+    display: flex;
+
+
+    li {
+        list-style: none;
+        white-space:  nowrap;
+        margin-top: 20px;
+    }
+
+    a {
+        padding: 10px;
+        margin: 10px 20px;
+        text-decoration: none;
+        border: 1px solid black;
+        background: #11f25f;
+        border-radius: 5px;
+        display: inline-block;
+        width: 100px;
+        &:hover,
+        &:focus {
+          background: #a7f5c2; 
+          width: 220px; 
+          text-align: right;
+        }
+    }
+}
+

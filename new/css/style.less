@@ -21,7 +21,7 @@ body {
 	height: auto !important;
     display: flex;
     flex-direction: column;
-    background-color: #0eff20;
+    background: #ebeef0;
 }
 
 /* Middle
@@ -34,11 +34,32 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #fff60e;
     flex: auto;
     display: flex;
 }
+.footer {
+    text-align: center;
+}
 
+@media (max-width:1000px){
+    .nav_top {
+       display: flex; 
+    }
+    .left-sidebar {
+        display: none;
+    }
+}
 
+@media (max-width:700px){
+    .mobil_menu {
+        display:flex;
+    }
+    .face, .nav_top {
+       display: none; 
+    }
+    .header {
+        justify-content: flex-start;
+    }
+}
 
 
