@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: #c1e5e5;
+  alink: #000; }
+
+a {
+  text-decoration: none;
+  color: #5d5d5d; }
+  a:visited {
+    color: #5d5d5d; }
+
+.vrap {
+  max-width: 100%;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 55px; }
+
+.header1 {
+  background: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #5d5d5d; }
+
+.header2 {
+  background: #1e37c3;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  color: #fff; }
+  .header2 h1 > span {
+    font-size: 25px; }
+
+.college {
+  height: 100%;
+  display: flex; }
+  .college span {
+    font-size: 18px;
+    margin: auto 5px; }
+  .college:hover {
+    color: #fff;
+    background: #9292a8; }
+
+.top {
+  background: #ccc;
+  font-size: 25px;
+  display: flex;
+  justify-content: center; }
+  .top > ul {
+    display: inline-flex;
+    list-style-type: none;
+    text-align: center; }
+    .top > ul li {
+      padding: 10px 30px;
+      margin-bottom: 2px;
+      border: 1px solid #ccc; }
+      .top > ul li:hover {
+        border: 1px solid white;
+        border-radius: 8px;
+        background: #9292a8;
+        color: white; }
+      .top > ul li:hover a {
+        background: #9292a8; }
+
+.footer {
+  margin: -50px auto -50px 0;
+  height: 50px;
+  background: #ccc;
+  position: relative;
+  text-align: center; }
+
+.face {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  transform: translate(20%, 5%); }
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  position: fixed;
+  transform: rotate(90deg);
+  right: 50px;
+  bottom: 50px; }
+  .arrow:hover {
+    background: #86d195; }
+
+.content {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto; }
+
+.left {
+  width: 30%;
+  background: #cadee0;
+  min-width: 200px;
+  padding: 10px; }
+  .left ol {
+    list-style-position: inside; }
+    .left ol > li {
+      font-size: 20px; }
+    .left ol > li:hover {
+      font-size: 25px;
+      margin-left: 30px;
+      background-color: #83e6ef;
+      font-weight: 700; }
+
+.text {
+  width: 70%;
+  background: #b6e7eb;
+  font-size: 20px;
+  padding: 10px; }
+
+.sertificate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.pdf {
+  object-fit: scale-down;
+  width: 49%;
+  margin: 0.1%; }
+
+@media (max-width: 800px) {
+  .pdf {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+    background: #c1e5e5;
+    alink :#000; 
+}
+a   { 
+    text-decoration: none; 
+    color:#5d5d5d;
+    &:visited {
+        color:#5d5d5d;
+    }
+}
+.vrap {
+  max-width: 100%;
+  min-height: 100%;
+  position: relative; 
+  padding-bottom: 55px;
+}
