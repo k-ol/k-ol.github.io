@@ -5,7 +5,7 @@ var compStep, userStep,
 for (;true;) {
     compStep = Math.floor(Math.random()/(1/3));
     userStep = prompt('Ваш ход:\nкамень - 1\nножницы - 2\nбумага - 3\nВыход - Отмена','');
-    if (typeof(userStep) != 'string') {
+    if (userStep === null) {
       alert('Пока');
       break;
     } else {

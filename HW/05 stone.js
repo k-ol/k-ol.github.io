@@ -8,7 +8,7 @@ var compStep, userStep,
     model =[[2, 1, 3], [3, 2, 1], [1, 3, 2]];
     compStep = Math.floor(Math.random()/(1/3));
     userStep = prompt('Ваш ход:\nкамень - 1\nножницы - 2\nбумага - 3','');
-if (typeof(userStep) != 'string') {
+if (userStep === null) {
   alert('Пока');
 } else {
     userStep = Number(userStep-1);
