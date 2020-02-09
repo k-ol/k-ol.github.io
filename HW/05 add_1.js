@@ -8,7 +8,7 @@ for (;true;) {
       alert('Пока');
       break;
     } else {
-        userStep = Number(userStep)-1;
+        userStep -=1;
         switch (compStep-userStep) {
           case -1: 
           case  2:alert('Моя победа - Я: '+ list[compStep]+' / Вы - '+list[userStep]);

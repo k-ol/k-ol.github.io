@@ -11,7 +11,7 @@ var compStep, userStep,
 if (userStep === null) {
   alert('Пока');
 } else {
-    userStep = Number(userStep-1);
+    userStep -= 1;
     switch (model[compStep][userStep]) {
       case 3: alert('Победа - Я: '+ list[compStep]+' / Вы - '+list[userStep]);
         break;
