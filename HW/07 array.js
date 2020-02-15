@@ -30,7 +30,7 @@ function repeatDel(arr) {
 
 var arrOne = [2, true, NaN, 'jjjjjjjjjj', null, 11, Infinity, '5', 10, 25, 'ggggggggggggggg', undefined, null, 'ggg', 34, '20', false],
     arrTwo = [2, true, 2, NaN, 11, 'ggggggggggggggg', null, 70, Infinity, true, '5', 10, 'jjjjjjjjjj', 25, undefined, 45, 95, null, 11, '55', 'ggg', 34, 2, '20'];
-arrTwo = repeatDel(arrTwo);// удалить повторяющиеся элементы в массиве2
-arrThree = arrTwo.filter(x => arrOne.includes(x));// пересечение
+arrThree = repeatDel(arrTwo);// удалить повторяющиеся элементы в массиве2
+arrThree = arrThree.filter(x => arrOne.includes(x));// пересечение
 arrThree = myChange(arrThree); //замена
 console.log(arrThree);
