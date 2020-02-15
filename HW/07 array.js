@@ -18,19 +18,10 @@ function myChange(arr) {
     return newArr;
 }
 
-function repeatDel(arr) {
-    var newArr = [];
-    arr.forEach(function (x) {
-        if (!newArr.includes(x)) {
-            newArr.push(x);
-        }
-    });
-    return newArr;
-}
-
 var arrOne = [2, true, NaN, 'jjjjjjjjjj', null, 11, Infinity, '5', 10, 25, 'ggggggggggggggg', undefined, null, 'ggg', 34, '20', false],
-    arrTwo = [2, true, 2, NaN, 11, 'ggggggggggggggg', null, 70, Infinity, true, '5', 10, 'jjjjjjjjjj', 25, undefined, 45, 95, null, 11, '55', 'ggg', 34, 2, '20'];
-arrThree = repeatDel(arrTwo);// удалить повторяющиеся элементы в массиве2
+    arrTwo = [2, true, 2, NaN, 11, 'ggggggggggggggg', null, 70, Infinity, true, '5', 10, 'jjjjjjjjjj', 25, undefined, 45, 95, null, 11, '55', 'ggg', 34, 2, '20'],
+    arrThree = [];
+arrThree = arrTwo.filter(x => !arrThree.includes(x));// удалить повторяющиеся элементы в массиве2
 arrThree = arrThree.filter(x => arrOne.includes(x));// пересечение
 arrThree = myChange(arrThree); //замена
 console.log(arrThree);
