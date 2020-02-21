@@ -19,9 +19,9 @@ let myObj2 = {
 
 function comparisonObj(obj1,obj2){
     let rezObj ={};
-    for (let elObj1 in obj1) {
-        if (elObj1 in obj2 && obj1[elObj1] === obj2[elObj1]) {  
-                    rezObj[obj1[elObj1]] = elObj1;
+    for (let key in obj1) {
+        if (key in obj2 && obj1[key] === obj2[key]) {  
+                    rezObj[obj1[key]] = key;
         }
     }
     return rezObj;
