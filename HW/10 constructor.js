@@ -32,4 +32,5 @@ stud2.getXY(10);
 stud1.unicOne();   
 stud2.unicTwo();  
 console.log(stud1);
+console.log(stud2);
 
