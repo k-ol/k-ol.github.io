@@ -7,7 +7,7 @@ function Student() {
     let x = 45;
     let y = 'Yes';
     this.getXY = function(a){
-         console.log('Аргумент = ' + a + ': Prop1 ='+  x +': Prop2 = '+ y );
+         console.log('Параметр = ' + a + ': Prop1 ='+  x +': Prop2 = '+ y );
     }
 }
 function SayStudent1() {
