@@ -3,14 +3,12 @@
 // В третьем конструкторе только статический метод, который создает 
 // объекты из конструктора, имя которого указано в параметрах.
 
-function Constr1() {
-}
+function Constr1() {};
 Constr1.prototype.run = function(){return 'run'};
 Constr1.prototype.go  = function(){return 'go'};
 Constr1.prototype.say = function(){return 'say'};
 
-function Constr2() {
-}
+function Constr2() {};
 Constr2.prototype.run = function(){return 'run-run'};
 Constr2.prototype.go  = function(){return 'go-go'};
 
@@ -27,4 +25,3 @@ console.log(obj1.run());
 console.log(obj2.run());
 console.log(obj1);
 console.log(obj2);
-
