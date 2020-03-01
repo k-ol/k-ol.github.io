@@ -16,7 +16,7 @@ Constr2.prototype.go  = function(){return 'go-go'};
 
 function Constr3(){};
 Constr3.crObj = function(nameConstr) {
-    return Object.create(nameConstr.prototype);
+    return Object.create(nameConstr.prototype);// или return new nameConstr();
 }
 
 let obj1 = Constr3.crObj(Constr1);
