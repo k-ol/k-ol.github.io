@@ -15,35 +15,30 @@ class Show {
     }
 }
 class WatchAnimals extends Show {
-    watchCreate(animal, arrAnimal){
-        arrAnimal.push(animal);
+    watchCreate(animal){
+        this.arrAnimal.push(animal);
         this.showCreate(animal);
     }
-    watchDelete(animal, arrAnimal) {
-        if (arrAnimal.indexOf(animal) != -1) {
-            this.showDelete(arrAnimal.splice(arrAnimal.indexOf(animal),1));
+    watchDelete(animal) {
+        if (this.arrAnimal.indexOf(animal) != -1) {
+            this.showDelete(this.arrAnimal.splice(this.arrAnimal.indexOf(animal),1));
         }
     }
 }
 class Animals extends WatchAnimals {
     constructor(animal, arrAnimal){
-        super(animal, arrAnimal);
+        super(animal);
+        this.name = animal;
+        this.arrAnimal = arrAnimal;
     }
 }
 let zoo = [];
-let zoo1 = [];
-let animal = new Animals();
-animal.watchCreate('Fish', zoo);
-animal.watchCreate('Fox', zoo);
-animal.watchCreate('Bear', zoo);
-animal.watchCreate('Wolf', zoo);
-animal.watchDelete('Fish', zoo);
-zoo.push('bee')
-animal.watchCreate('Car', zoo1);
-animal.watchCreate('Fox', zoo1);
-animal.watchCreate('Bear', zoo1);
-animal.watchCreate('Wolf', zoo);
-animal.watchDelete('Fish', zoo1);
-console.log(zoo);
-console.log(zoo1);
+let animal = new Animals('ChangeZoo',zoo);
+animal.watchCreate('Fish');
+animal.watchCreate('Fox');
+animal.watchCreate('Fox');
+animal.watchCreate('Bear');
+animal.watchCreate('Wolf');
+animal.watchDelete('Fish');
 console.log(animal);
+console.log(zoo);
