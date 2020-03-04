@@ -8,43 +8,49 @@
 
 class Show {
     showCreate(animal) {
-        console.log('Добавленное животное: ' + animal );
+        console.log('Добавленное животное: ' + animal);
     }
     showDelete(animal) {
-        console.log('Удаленное животное: ' + animal );
+        console.log('Удаленное животное: ' + animal);
     }
 }
 class WatchAnimals extends Show {
-
+    watchCreate(animal){
+        this.showCreate(animal)
+    }
+    watchDelete(animal){
+        this.showDelete(animal)
+    }
 }
 class Animals extends WatchAnimals {
     constructor(animal, arrAnimal){
-        super(animal, arrAnimal);
+        super(animal);
     }
-    watchCreate(animal, arrAnimal){
+    animalCreate(animal, arrAnimal){
         arrAnimal.push(animal);
-        this.showCreate(animal);
+        this.watchCreate(animal);
     }
-    watchDelete(animal, arrAnimal) {
+    animalDelete(animal, arrAnimal) {
         if (arrAnimal.indexOf(animal) != -1) {
-            this.showDelete(arrAnimal.splice(arrAnimal.indexOf(animal),1));
+            this.watchDelete(arrAnimal.splice(arrAnimal.indexOf(animal),1));
         }
     }
 }
 let zoo = [];
 let zoo1 = [];
-let animal = new Animals();
-animal.watchCreate('Fish', zoo);
-animal.watchCreate('Fox', zoo);
-animal.watchCreate('Bear', zoo);
-animal.watchCreate('Wolf', zoo);
-animal.watchDelete('Fish', zoo);
+let handler = new Animals();
+handler.animalCreate('Fish', zoo);
+handler.animalCreate('Fox', zoo);
+handler.animalCreate('Bear', zoo);
+handler.animalCreate('Wolf', zoo);
+handler.animalDelete('Fish', zoo);
+handler.animalDelete('Fish', zoo);
 zoo.push('bee')
-animal.watchCreate('Car', zoo1);
-animal.watchCreate('Fox', zoo1);
-animal.watchCreate('Bear', zoo1);
-animal.watchCreate('Wolf', zoo);
-animal.watchDelete('Fish', zoo1);
+handler.animalCreate('Car', zoo1);
+handler.animalCreate('Fox', zoo1);
+handler.animalCreate('Bear', zoo1);
+handler.animalCreate('Wolf', zoo);
+handler.animalDelete('Fish', zoo1);
 console.log(zoo);
 console.log(zoo1);
-console.log(animal);
+console.log(handler);
