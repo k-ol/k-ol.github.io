@@ -44,6 +44,5 @@ handler = new Animals('Fox');       // создаю объект - животн�
 handler.animalCreate(zoo);          // добавляю объект - животное Fox в массив zoo
 handler = new Animals('Wolf');      // создаю объект - животное Wolf
 handler.animalCreate(zoo);          // добавляю объект - животное в массив zoo
-console.log(zoo);
-handler.animalDelete('Fox', zoo);   // удаляю объект - животное в массив zoo
+handler.animalDelete('Fox', zoo);   // удаляю объект - животное Fox из массива zoo
 console.log(zoo);
