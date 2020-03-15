@@ -15,10 +15,10 @@ class Show {
 }
 class WatchAnimals extends Show {
     watchCreate(animal){
-        this.showCreate(animal)
+        this.showCreate(animal);
     }
     watchDelete(animal){
-        this.showDelete(animal)
+        this.showDelete(animal);
     }
 }
 class Animals extends WatchAnimals {
@@ -32,9 +32,9 @@ class Animals extends WatchAnimals {
     }
     animalDelete(name, arrAnimal) {
         for (let i = 0; i < arrAnimal.length; i++){
-            if (arrAnimal[i].name = name) {
-                arrAnimal.splice(i,1);
+            if (arrAnimal[i].name === name) {
                 this.watchDelete(arrAnimal[i]);
+                arrAnimal.splice(i,1);
             } 
         }
     }
@@ -44,6 +44,6 @@ handler = new Animals('Fox');       // создаю объект - животн�
 handler.animalCreate(zoo);          // добавляю объект - животное Fox в массив zoo
 handler = new Animals('Wolf');      // создаю объект - животное Wolf
 handler.animalCreate(zoo);          // добавляю объект - животное в массив zoo
-console.log(zoo);
+// console.log(zoo);
 handler.animalDelete('Fox', zoo);   // удаляю объект - животное Fox из массива zoo
-console.log(zoo);
+сonsole.log(zoo);
