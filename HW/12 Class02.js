@@ -45,7 +45,7 @@ handler.animalCreate('Bear', zoo);
 handler.animalCreate('Wolf', zoo);
 handler.animalDelete('Fish', zoo);
 handler.animalDelete('Fish', zoo);
-zoo.push('bee')
+zoo.push('bee');
 handler.animalCreate('Car', zoo1);
 handler.animalCreate('Fox', zoo1);
 handler.animalCreate('Bear', zoo1);
