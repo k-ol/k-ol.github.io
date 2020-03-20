@@ -1,14 +1,12 @@
-class User {
-    say () {
-        console.log('Hi');
-    }
+var a = 1;
+function foo(){
+    a++;
+    console.log(a);
 }
-class Person extends User {
-    say11(){
-        this.say();
-    }
-}
+foo();
+foo();
+foo();
+foo();
+foo();
+foo();
 
-let li = new Person ();
-li.say();
-li.say11();
